@@ -1,0 +1,51 @@
+/* Definimos selector de tipo elemento para el heading 1 */
+
+h1 {
+    color:purple;
+    font-weight: bold;
+}
+
+/* Definimos selector de tipo clase*/
+
+.c1 {
+	color:green;
+    font-weight: bold;
+}
+
+/* Definimos selector de tipo clase*/
+
+.c2 {
+	color:red;
+    font-weight: bold;
+}
+
+/* Definimos selector de tipo clase*/
+
+.c3 {
+	color:blue;
+    font-weight: bold;
+}
+
+/* Definimos selector de tipo identificador*/
+
+#id2 {
+	width: 300px;
+}
+
+/* Definimos selector de tipo combinado para los INPUTS o cajas de tipo texto*/
+
+div INPUT{
+  width: 200px;
+}
+
+/* Seleccionamos todos los elementos de ambos documentos y los centramos*/
+
+*{
+	text-align:center;
+}
+
+/* Alineamos a la izquierda el shadow text del cuadro de texto*/
+
+textarea {
+    text-align:left;
+}

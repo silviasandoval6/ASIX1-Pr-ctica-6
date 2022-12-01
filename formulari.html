@@ -1,0 +1,81 @@
+   <html>
+	<!--Definimos el head del documento-->
+	<head>
+		<!--Ponemos el título de la pestaña y  relacionamos éste documento con el style.css-->
+		<title>Formulari</title>
+		<link rel="stylesheet" href="style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<!--Definimos el cuerpo del documento-->
+	<body>
+		<!--Ponemos el primer heading-->
+		
+		<h1>El meu primer formulari</h1>
+		
+		<!--Ponemos el segundo heading utilizando una clase de tipo style definida en el fichero style.css-->
+		
+		<h5 class="c1">Les teves dades personals</h5>
+		
+		<!--Abrimos una sección que nos servirá para definir el estilo de las cajas INPUT de texto usando un
+		    selector combinado-->
+		<div>
+		
+			<!--El texto que acompaña los INPUTS debe ser de tipo label-->	
+			<label>Nom<label>
+			
+			<!--Definimos el INPUT especificando el tipo-->
+			<INPUT type='text' name='nom' size='30' maxlength='30'>
+			<label>Cognom<label>
+			<INPUT type='text' name='cognom' size='30' maxlength='30'> <br><br>
+		</div>
+		
+		<!--Seguimos la misma estructura de antes de poner un label y después especificamos INPUT de tipo number-->
+		<!--Estilizamos el INPUT de tipo número utilizando un selector con identificador-->
+		
+		<label>Edad<label> <INPUT id ="id2" type='number' name='edad' size='30' maxlength='30'> <br>
+		
+		<!--Ponemos el segundo heading y lo estilizamos mediante un selector de tipo clase-->
+		
+		<h5 class="c2">Marca els llenguatges de programació que més t'agraden:</h5> 
+	
+		<!--Definimos las opciones de tipo checkbox dejando la primera como predeterminada y sus correspondientes labels-->
+		
+		<input type="checkbox" id="HTML" name="HTML" checked>
+		<label for="HTML">HTML<label><br>
+		<input type="checkbox" id="CSS" name="CSS">
+		<label for="HTML">CSS<label><br>
+		<input type="checkbox" id="XML" name="XML">
+		<label for="HTML">XML<label><br>
+	
+		<!--Ponemos el tercer heading y lo estilizamos mediante un selector de tipo clase-->
+		<h5 class="c3">Selecciona el cicle formatiu que vols cursar:</h5> 
+	
+		<label>Selecciona el cicle: <label> <br>
+		
+		<!--Definimos las opciones de tipo radio dejando la primera como predeterminada y sus correspondientes labels-->
+		
+		<input type="radio" id="ASIX" name="fav_ciclo" value="ASIX" checked>
+		<label for="ASIX">ASIX</label><br>
+		<input type="radio" id="DAM" name="fav_ciclo" value="DAM">
+		<label for="DAM">DAM</label><br>
+		<input type="radio" id="DAW" name="fav_ciclo" value="DAW">
+		<label for="DAW">DAW</label><br><br>
+	  
+		<label>Selecciona el curs: <label>
+		
+		<!--Definimos la selección de opciones dejando la primera como predeterminada-->
+		<select name="select">
+			<option value="value1" selected>Primer</option>
+			<option value="value2">Segon</option>
+		</select>
+	  
+		<br><br><label>Observacions:</label><br><br>
+		
+	    <!--Ponemos el cuadro de texto definiendo sus dimensiones-->
+		<textarea placeholder="Escriu el teu missatge"id="t1" rows="10" cols="50"></textarea>
+		<br><br>  
+		<!--Ponemos botón que nos redirigirá al segundo fichero resultat.html-->
+		<button onclick="document.location='resultat.html'">Submit</button>
+	
+	</body>
+    </html>
